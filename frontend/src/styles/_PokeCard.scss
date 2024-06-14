@@ -1,0 +1,37 @@
+// styling PokeCard
+
+.pokecard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 230px;
+
+    border-radius: 1rem;
+    background-color: var(--card-bg);
+    box-shadow: 10px 20px 10px 0px rgba(0,0,0,0.1);
+    color: var(--font-clr);
+    text-decoration: none;
+    text-transform: capitalize;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+        article {
+        min-width: 230px;
+        min-height: 240px;
+        border-radius: 1rem;
+        border-style: none;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        
+        
+        }
+}

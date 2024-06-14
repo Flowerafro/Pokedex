@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import 'color';
+@import 'pokecard'; 
+@import 'header';
+@import 'typecard';
+@import 'teams';
+@import 'pokemon';
+
+:root {
+    --card-bg: #f0f0f0;
+    --card-border: #ebe8e8;
+    --header-bg: #ffffff;
+    --font: 'Roboto', sans-serif;
+    --font-clr: #000;
+    --btn-clr1: #fff;
+    --btn-clr2: grey; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--font);
+    
+    #root {
+        width: 100%;
+        height: auto;
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            padding-top: 3rem;
+            padding-bottom: 5rem;
+            max-width: 60vw;
+
+            .title {
+                text-align: center;
+            }
+
+            // styling til visning av pokeCards i home og team
+            .pokemons {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                gap: 2rem;
+            }
+
+            // Styling til Types på forsiden
+            #types {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 5rem;
+            }
+
+            .typeTitle {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                
+                img {
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+
+            // styling til feilmelding
+            .notfound {
+                margin-top: 10rem ;
+                font-family: var(--font);
+                font-size: 1.5rem;
+
+            }
+            
+        }
+
+        }
+    }
+
+    
